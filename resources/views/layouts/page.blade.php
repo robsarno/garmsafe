@@ -1,0 +1,1 @@
+@extends("masters.master") @section('nav-bar') @include("templates.nav-bar") @endsection @section("titolo") {{$titolo}} @endsection
