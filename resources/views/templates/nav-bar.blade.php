@@ -11,19 +11,19 @@
 				<a class="nav-link" href="#">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Prodotti</a>
+				<a class="nav-link" href="/prodotti">Prodotti</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Chi siamo</a>
+				<a class="nav-link" href="/chi-siamo">Chi siamo</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Territorio</a>
+				<a class="nav-link" href="/territorio">Territorio</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Statuto</a>
+				<a class="nav-link" href="/statuto">Statuto</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Contatti</a>
+				<a class="nav-link" href="/contatti">Contatti</a>
 			</li>
 		</ul>
 	</div>

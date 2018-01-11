@@ -1,1 +1,9 @@
-@extends("masters.master") @section('nav-bar') @include("templates.nav-bar") @endsection @section("titolo") {{$titolo}} @endsection
+@extends("masters.master")
+@section('body')
+    @yield('copertina')
+    @yield('sez-contenuto')
+@endsection
+
+@section("titolo")
+    {{$titolo}}
+@endsection

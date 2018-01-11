@@ -1,0 +1,100 @@
+.footer{
+    background-color: #f5f5f5;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: inherit;
+}
+
+footer a:link {
+    color: inherit;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+nav .nav-link{
+    font-size: 1.2em;
+}
+
+.jumbotron{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+.jumbotron .container{
+    color: white;
+    text-shadow: 1px 1px black;
+    
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.titolo-pagina{
+    text-shadow: 1px 1px black;
+}
+
+
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  

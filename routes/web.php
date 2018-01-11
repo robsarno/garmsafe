@@ -16,3 +16,9 @@ Route::get('/', function () {
         "titolo" => "Home Page"
     ]);
 });
+Route::get('/territorio', function () {
+    return view('pages.territorio', [
+        "titolo" => "Territorio",
+        "titolo_pagina" => "Territorio"
+    ]);
+});
