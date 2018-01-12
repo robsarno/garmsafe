@@ -28,22 +28,34 @@ nav .nav-link{
     background-size: cover;
     padding: 100px;
 }
-.jumbotron .container{
+/* toglie padding a box per mobile */
+@media only screen and (max-width: 768px) {
+  .jumbotron{
+    padding: 0;
+  }
+}
+
+/* box dietro a titoli */
+.transparent-bg{
     color: white;
     text-shadow: 1px 1px black;
-    
-    padding: 40px;
+    padding: 40px !important;
     background-color: rgba(0, 0, 0, 0.5);
-
 }
 
 .titolo-pagina{
     text-shadow: 1px 1px black;
 }
 
+.sez-img{
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
 
-  
-  
   /* MARKETING CONTENT
   -------------------------------------------------- */
   
@@ -98,4 +110,4 @@ nav .nav-link{
     }
   }
   
-
+  

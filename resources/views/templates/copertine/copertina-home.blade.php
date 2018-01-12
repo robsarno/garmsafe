@@ -1,13 +1,11 @@
 <div class="copertina" id="copertina">
-	<div class="site-wrapper">
+	<div class="site-wrapper" style="background-image:url('../img/cover.png');">
 
 		<div class="site-wrapper-inner">
 
-			<div class="cover-container">
+			<div class="cover-container ">
 
-
-
-				<main role="main" class="inner cover">
+				<main role="main" class="inner cover transparent-bg">
 					<h1 class="cover-heading">{{ $titolo_pagina }}</h1>
 					<p class="lead">{{ $descrizione_pagina }}</p>
 					<p class="lead">
