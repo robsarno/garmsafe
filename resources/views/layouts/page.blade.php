@@ -5,5 +5,5 @@
 @endsection
 
 @section("titolo")
-    {{$titolo}}
+    {{$titolo_pagina}}
 @endsection
