@@ -21,7 +21,7 @@
 		<title>@yield("titolo")</title>
 	</head>
 
-	<body onresize="ridimensiona()">
+	<body>
 		@include('templates.nav-bar') @yield('body')
 		 @include('templates.footer')
 		 <script src="{{ asset('js/mio.js') }}"></script>

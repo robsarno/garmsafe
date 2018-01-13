@@ -46,10 +46,12 @@ nav .nav-link{
 .titolo-pagina{
     text-shadow: 1px 1px black;
 }
-
+.navbar-brand{
+  margin-right: 0px;
+}
 .sez-img{
     width: 100%;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
