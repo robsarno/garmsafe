@@ -18,7 +18,7 @@ class CreateArticoliTable extends Migration
             $table->string("titolo", 50);
             $table->string("sottotitolo", 255);
             $table->text("descrizione");
-            $table->string("link_img", 255);
+            $table->string("img", 255);
             $table->boolean("sx")->default(false);
         });
     }

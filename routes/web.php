@@ -1,5 +1,7 @@
 <?php
 
+use App\Pagina;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,40 +14,42 @@
  */
 
 Route::get('/', function () {
+    $pagina=Pagina::findOrFail(1);
+    $tab3=$pagina->tab3->first();
+    $articoli=$tab3->articoli;
     return view('pages.home', [
-        "titolo_pagina" => "Home",
-        "descrizione_pagina" => "descrizione home",
+        "pagina"=>$pagina,
+        "tab3"=>$tab3,
+        "articoli"=>$articoli
     ]);
 });
 Route::get('/prodotti', function () {
+    $pagina=Pagina::findOrFail(2);
     return view('pages.prodotti', [
-        "titolo_pagina" => "Prodotti",
-        "descrizione_pagina" => "I nostri prodotti.",
+        "pagina"=>$pagina
     ]);
 });
 Route::get('/chi-siamo', function () {
+    $pagina=Pagina::findOrFail(2);
     return view('pages.chi-siamo', [
-        "titolo_pagina" => "Chi Siamo",
-        "descrizione_pagina" => "Chi siamo noi????",
+        "pagina"=>$pagina
     ]);
 });
 Route::get('/territorio', function () {
-    $articolo=[["titolo"=>"PROVA", "sottotitolo"=>"saljkdbgkj", "contenuto"=>"belloziao", "immagine"=>null, "sx"=>true],["titolo"=>"PROVA", "sottotitolo"=>"saljkdbgkj", "contenuto"=>"belloziao", "immagine"=>null, "sx"=>false]];
+    $pagina=Pagina::findOrFail(2);
     return view('pages.territorio', [
-        "titolo_pagina" => "Territorio",
-        "descrizione_pagina" => "descrizione territorio",
-        "articoli" => $articolo
+        "pagina"=>$pagina
     ]);
 });
 Route::get('/statuto', function () {
+    $pagina=Pagina::findOrFail(2);
     return view('pages.statuto', [
-        "titolo_pagina" => "Statuto",
-        "descrizione_pagina" => "descr statuto",
+        "pagina"=>$pagina
     ]);
 });
 Route::get('/contatti', function () {
+    $pagina=Pagina::findOrFail(2);
     return view('pages.contatti', [
-        "titolo_pagina" => "Contatti",
-        "descrizione_pagina" => "Contattaci",
+        "pagina"=>$pagina
     ]);
 });

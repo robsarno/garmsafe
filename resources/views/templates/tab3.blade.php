@@ -1,15 +1,31 @@
-<div class="row featurette">
-	<h2 class="featurette-heading">
-        {{ $titolo }}
-		<span class="text-muted">{{ $sottotitolo }}</span>
-    </h2>
-    @for ($i = 0; $i< 3; $i++) 
+
+<div class="container-fluid sfondo-grigio">
+
+
+<div class="container marketing ">
+	<div class="row">
+		@foreach ($articoli as $articolo)
+			
+
+
+
     <div class="col-lg-4">
-		<?php $src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==";?>
-		<img class="rounded-circle" src="<?php echo($articolo->immagine!=null?$articolo->immagine:$src)?>" alt="Generic placeholder image"
-		 width="140" height="140">
+				<a href="#">
+		@if ($articolo->img)
+		<img class="" src="{{ asset('img/tab3/'.$articolo->img) }}" alt="Generic placeholder image" width="200" height="200">
+		@else
+		<img class="" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="200" height="200">
+
+		@endif
+		
+		 
 		<h2>{{ $articolo->titolo }}</h2>
 		<p>{{ $articolo->descrizione }}</p>
-    </div>
-@endfor
+	</a>
+		</div>
+
+		@endforeach
+	</div>
+
+</div>
 </div>

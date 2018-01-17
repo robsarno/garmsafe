@@ -73,6 +73,15 @@ nav .nav-link{
     margin-right: .75rem;
     margin-left: .75rem;
   }
+  .sfondo-grigio{
+    padding:30px 15px;
+    background-color: #e1e6e9!important
+  }
+  .sfondo-arancione{
+    padding:30px 15px;
+    background-color: #ffc726!important;
+  }
+
   
   
   /* Featurettes

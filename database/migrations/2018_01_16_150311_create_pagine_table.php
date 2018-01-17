@@ -17,6 +17,7 @@ class CreatePagineTable extends Migration
             $table->increments('id');
             $table->string("titolo", 50);
             $table->string("descrizione", 255);
+            $table->string("url",50);
             $table->timestamps();
         });
     }

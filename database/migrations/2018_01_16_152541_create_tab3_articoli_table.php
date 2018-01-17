@@ -17,9 +17,10 @@ class CreateTab3ArticoliTable extends Migration
 
             $table->integer("id_tab3")->unsigned();
             $table->integer("id_articolo")->unsigned();
-            $table->string("link_img_hover", 255);
+            $table->string("img_hover", 255);
             $table->primary(["id_tab3", "id_articolo"]);
             $table->foreign("id_tab3")->references("id")->on("tab3")->onDelete("cascade");
+            $table->string("link",50)->nullable();
             $table->foreign("id_articolo")->references("id")->on("articoli")->onDelete("cascade");
         });
     }
