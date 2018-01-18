@@ -19,3 +19,21 @@ function ismobile() {
     else
         return false;
 }
+
+//Sul hover dell'immagine
+var links=document.getElementsByClassName("imgPadre");
+for(var i=0;i<links.length;i++)
+{
+    links[i].addEventListener("mouseover",onHover,false);
+    links[i].addEventListener("mouseout",onHoverFinnish,false);
+}
+function onHover(){
+    var idTrovato=this.id;
+    var stringaOr=this.children[0].src;
+    this.children[0].src=stringaOr.substring(0,stringaOr.length-3)+"gif";
+}
+function onHoverFinnish(){
+    var idTrovato=this.id;
+    var stringaOr=this.children[0].src;
+    this.children[0].src=stringaOr.substring(0,stringaOr.length-3)+"png";
+}
