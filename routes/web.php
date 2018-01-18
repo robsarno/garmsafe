@@ -15,12 +15,14 @@ use App\Pagina;
 
 Route::get('/', function () {
     $pagina=Pagina::findOrFail(1);
-    $tab3=$pagina->tab3->first();
-    $articoli=$tab3->articoli;
+    $tab3=$pagina->tab3;
+    foreach ($tab3 as $key => $value) {
+        $articoli[$key]=$value->articoli;
+    }
     return view('pages.home', [
         "pagina"=>$pagina,
-        "tab3"=>$tab3,
-        "articoli"=>$articoli
+        "_tab3"=>$tab3,
+        "_articoli"=>$articoli
     ]);
 });
 Route::get('/prodotti', function () {
@@ -32,7 +34,7 @@ Route::get('/prodotti', function () {
     ]);
 });
 Route::get('/chi-siamo', function () {
-    $pagina=Pagina::findOrFail(2);
+    $pagina=Pagina::findOrFail(3);
     return view('pages.chi-siamo', [
         "pagina"=>$pagina
     ]);

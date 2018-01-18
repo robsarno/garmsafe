@@ -3,7 +3,19 @@
     @include('templates.copertine.copertina-home')
 @endsection
 @section('sez-contenuto')
-    @include("templates.tab3")
+    <div class="container-fluid sfondo-grigio">
+        @php
+            $tab3=$_tab3[0];
+            $articoli=$_articoli[0];
+        @endphp
+        @include("templates.tab3")
+    </div>
     @include('templates.sez-img')
-    @include("templates.tab3")
+    <div class="container-fluid sfondo-arancione">
+        @php
+            $tab3=$_tab3[1];
+            $articoli=$_articoli[1];
+        @endphp
+        @include("templates.tab3")
+    </div>
 @endsection
