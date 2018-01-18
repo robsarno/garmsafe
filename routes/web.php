@@ -30,25 +30,25 @@ Route::get('/prodotti', function () {
     ]);
 });
 Route::get('/chi-siamo', function () {
-    $pagina=Pagina::findOrFail(2);
+    $pagina=Pagina::findOrFail(3);
     return view('pages.chi-siamo', [
         "pagina"=>$pagina
     ]);
 });
 Route::get('/territorio', function () {
-    $pagina=Pagina::findOrFail(2);
+    $pagina=Pagina::findOrFail(4);
     return view('pages.territorio', [
         "pagina"=>$pagina
     ]);
 });
 Route::get('/statuto', function () {
-    $pagina=Pagina::findOrFail(2);
+    $pagina=Pagina::findOrFail(5);
     return view('pages.statuto', [
         "pagina"=>$pagina
     ]);
 });
 Route::get('/contatti', function () {
-    $pagina=Pagina::findOrFail(2);
+    $pagina=Pagina::findOrFail(6);
     return view('pages.contatti', [
         "pagina"=>$pagina
     ]);
