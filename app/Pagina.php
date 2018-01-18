@@ -10,4 +10,7 @@ class Pagina extends Model
     public function tab3(){
         return $this->hasMany(Tab3::class, "id_pagina");
     }
+    public function articoli(){
+        return $this->belongsToMany(Articolo::class,"articoli_pagine","id_pagina","id_articolo");
+    }
 }

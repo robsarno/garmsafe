@@ -14,7 +14,6 @@ class CreateTab3ArticoliTable extends Migration
     public function up()
     {
         Schema::create('tab3_articoli', function (Blueprint $table) {
-
             $table->integer("id_tab3")->unsigned();
             $table->integer("id_articolo")->unsigned();
             $table->string("img_hover", 255);

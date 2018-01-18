@@ -25,8 +25,10 @@ Route::get('/', function () {
 });
 Route::get('/prodotti', function () {
     $pagina=Pagina::findOrFail(2);
+    $articoli=$pagina->articoli;
     return view('pages.prodotti', [
-        "pagina"=>$pagina
+        "pagina"=>$pagina,
+        "articoli"=>$articoli
     ]);
 });
 Route::get('/chi-siamo', function () {
@@ -37,8 +39,10 @@ Route::get('/chi-siamo', function () {
 });
 Route::get('/territorio', function () {
     $pagina=Pagina::findOrFail(4);
+    $articoli=$pagina->articoli;
     return view('pages.territorio', [
-        "pagina"=>$pagina
+        "pagina"=>$pagina,
+        "articoli"=>$articoli
     ]);
 });
 Route::get('/statuto', function () {
