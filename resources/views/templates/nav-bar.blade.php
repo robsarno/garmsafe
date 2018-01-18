@@ -11,23 +11,23 @@
 		<div class="navbar-collapse collapse" id="navbarsExample07" style="">
 			<!-- Links -->
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
+				<li class="nav-item {{ Request::is('/')?'active':'' }}">
 					<a class="nav-link" href="/">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/prodotti">Prodotti</a>
+					<a class="nav-link {{ Request::is('prodotti')?'active':'' }}" href="/prodotti">Prodotti</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/chi-siamo">Chi siamo</a>
+					<a class="nav-link {{ Request::is('chi-siamo')?'active':'' }}" href="/chi-siamo">Chi siamo</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/territorio">Territorio</a>
+					<a class="nav-link {{ Request::is('territorio')?'active':'' }}" href="/territorio">Territorio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/statuto">Statuto</a>
+					<a class="nav-link {{ Request::is('statuto')?'active':'' }}" href="/statuto">Statuto</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/contatti">Contatti</a>
+					<a class="nav-link {{ Request::is('contatti')?'active':'' }}" href="/contatti">Contatti</a>
 				</li>
 			</ul>
 		</div>
