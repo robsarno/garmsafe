@@ -27,6 +27,7 @@ nav .nav-link{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
+    margin-bottom: 0px;
 }
 /* toglie padding a box per mobile */
 @media only screen and (max-width: 768px) {
@@ -92,11 +93,17 @@ nav .nav-link{
   }
   .sfondo-grigio{
     padding:30px 15px;
+    padding-top: 50px;
     background-color: #e1e6e9!important
   }
   .sfondo-arancione{
     padding:30px 15px;
+    padding-top: 50px;
     background-color: #ffc726!important;
+  }
+  .sfondo-bianco{
+    padding:30px 15px;
+    padding-top: 50px;
   }
 
 

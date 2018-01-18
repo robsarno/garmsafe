@@ -23,15 +23,23 @@ Route::get('/', function () {
     return view('pages.home', [
         "pagina"=>$pagina,
         "_tab3"=>$tab3,
-        "_articoli"=>$articoli
+        "_articoli"=>$articoli,
+        "nomeImg"=>"/image/hall.jpg"
     ]);
 });
 Route::get('/prodotti', function () {
     $pagina=Pagina::findOrFail(2);
+    $tab3=$pagina->tab3;
+    foreach ($tab3 as $key => $value) {
+        $articoliTab3[$key]=$value->articoli;
+    }
     $articoli=$pagina->articoli;
     return view('pages.prodotti', [
         "pagina"=>$pagina,
-        "articoli"=>$articoli
+        "articoli"=>$articoli,
+        "_articoli"=>$articoliTab3,
+        "_tab3"=>$tab3,
+        "nomeImg"=>"/image/hall.jpg"
     ]);
 });
 Route::get('/chi-siamo', function () {

@@ -6,7 +6,7 @@
     <div class="container-fluid sfondo-grigio">
         @php
             $tab3=$_tab3[0];
-            $articoli=$_articoli[0];
+            $articoliTab3=$_articoli[0];
         @endphp
         @include("templates.tab3")
     </div>
@@ -14,7 +14,7 @@
     <div class="container-fluid sfondo-arancione">
         @php
             $tab3=$_tab3[1];
-            $articoli=$_articoli[1];
+            $articoliTab3=$_articoli[1];
         @endphp
         @include("templates.tab3")
     </div>
