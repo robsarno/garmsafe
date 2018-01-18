@@ -1,6 +1,7 @@
 <?php
 
 use App\Pagina;
+use App\Titolo;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,8 +50,10 @@ Route::get('/territorio', function () {
 });
 Route::get('/statuto', function () {
     $pagina=Pagina::findOrFail(5);
+    $titoli=Titolo::all();
     return view('pages.statuto', [
-        "pagina"=>$pagina
+        "pagina"=>$pagina,
+        "titoli"=>$titoli
     ]);
 });
 Route::get('/contatti', function () {
