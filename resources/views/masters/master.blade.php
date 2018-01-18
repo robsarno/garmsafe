@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/mio.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/cover.css') }}">
+		<!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"-->
 		<meta charset="UTF-8">
 		<meta name="description" content="Your Security, Our Responsibility">
 		<meta name="keywords" content="blind, blindstrip, safety, sicurezza, ciechi, garm, garmsafe, technology, tecnologie, facilities, wearable, indossabile, arduino, bergamo, itis Paleocapa, Paleocapa, disability, disabilità">

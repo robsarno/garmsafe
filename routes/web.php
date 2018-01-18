@@ -2,6 +2,7 @@
 
 use App\Pagina;
 use App\Titolo;
+use App\Utente;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,7 +46,8 @@ Route::get('/prodotti', function () {
 Route::get('/chi-siamo', function () {
     $pagina=Pagina::findOrFail(3);
     return view('pages.chi-siamo', [
-        "pagina"=>$pagina
+        "pagina"=>$pagina,
+        "utenti"=>Utente::paginate(3)
     ]);
 });
 Route::get('/territorio', function () {
