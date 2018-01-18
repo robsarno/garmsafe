@@ -15,7 +15,7 @@ class CreateStatutoTable extends Migration
     {
         Schema::create('statuto', function (Blueprint $table) {
             $table->increments('id');
-            $table->string("titolo", 50);
+            $table->string("titolo", 80);
             $table->text("descrizione");
             $table->integer("id_titolo")->unsigned();
             $table->foreign("id_titolo")->references("id")->on("titolo")->onDelete("cascade");
