@@ -32,7 +32,7 @@ Route::get('/prodotti', function () {
     ]);
 });
 Route::get('/chi-siamo', function () {
-    $pagina=Pagina::findOrFail(3);
+    $pagina=Pagina::findOrFail(2);
     return view('pages.chi-siamo', [
         "pagina"=>$pagina
     ]);

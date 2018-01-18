@@ -58,6 +58,23 @@ nav .nav-link{
     height: 400px;
 }
 
+
+.link-tab3 a{
+  text-decoration: none !important;
+}
+
+.link-tab3 a:visited {
+  color: inherit !important;
+}
+
+.link-tab3 a:link {
+  color: inherit !important;
+}
+.imgPadre:hover .titolo{
+  text-decoration: underline;
+}
+
+
   /* MARKETING CONTENT
   -------------------------------------------------- */
   
@@ -81,6 +98,7 @@ nav .nav-link{
     padding:30px 15px;
     background-color: #ffc726!important;
   }
+
 
   
   
