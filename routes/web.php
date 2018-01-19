@@ -73,3 +73,10 @@ Route::get('/contatti', function () {
     ]);
 });
 Route::post('invia-messaggio', ['as'=>'contatti.salva','uses'=>'ContattiController@contattiPost']);
+Route::get('/acquista', function () {
+    $pagina=Pagina::findOrFail(7);
+    return view('pages.acquista', [
+        "pagina"=>$pagina
+    ]);
+});
+
