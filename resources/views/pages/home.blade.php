@@ -11,7 +11,7 @@
         @include("templates.tab3")
     </div>
     @include('templates.sez-img')
-    <div class="container-fluid sfondo-arancione">
+    <div class="container-fluid sfondo-arancione testo-bianco">
         @php
             $tab3=$_tab3[1];
             $articoliTab3=$_articoli[1];

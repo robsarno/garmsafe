@@ -75,6 +75,12 @@ nav .nav-link{
   text-decoration: underline;
 }
 
+/* BUTTON 
+--------------------------------------------------*/
+.btn-outline-warning{
+  border-color: #fff;
+}
+
 
   /* MARKETING CONTENT
   -------------------------------------------------- */
@@ -144,4 +150,8 @@ nav .nav-link{
     .featurette-heading {
       /*margin-top: 7rem;*/
     }
+  }
+
+  .testo-bianco{
+    color: #fff;
   }

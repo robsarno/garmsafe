@@ -72,3 +72,10 @@ Route::get('/contatti', function () {
         "pagina"=>$pagina
     ]);
 });
+Route::get('/acquista', function () {
+    $pagina=Pagina::findOrFail(7);
+    return view('pages.acquista', [
+        "pagina"=>$pagina
+    ]);
+});
+
