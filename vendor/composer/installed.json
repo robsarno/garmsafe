@@ -638,17 +638,17 @@
     },
     {
         "name": "laravel/framework",
-        "version": "v5.5.28",
-        "version_normalized": "5.5.28.0",
+        "version": "v5.5.32",
+        "version_normalized": "5.5.32.0",
         "source": {
             "type": "git",
             "url": "https://github.com/laravel/framework.git",
-            "reference": "cfafae1f2043208390a7c984e3070696f4969605"
+            "reference": "254e4c3e133f5bc8d6068cdf28ea062abc10adf2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laravel/framework/zipball/cfafae1f2043208390a7c984e3070696f4969605",
-            "reference": "cfafae1f2043208390a7c984e3070696f4969605",
+            "url": "https://api.github.com/repos/laravel/framework/zipball/254e4c3e133f5bc8d6068cdf28ea062abc10adf2",
+            "reference": "254e4c3e133f5bc8d6068cdf28ea062abc10adf2",
             "shasum": ""
         },
         "require": {
@@ -738,7 +738,7 @@
             "symfony/dom-crawler": "Required to use most of the crawler integration testing tools (~3.3).",
             "symfony/psr-http-message-bridge": "Required to psr7 bridging features (~1.0)."
         },
-        "time": "2017-12-26T16:24:40+00:00",
+        "time": "2018-01-18T13:27:23+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -836,6 +836,73 @@
             "laravel",
             "psysh"
         ]
+    },
+    {
+        "name": "laravelcollective/html",
+        "version": "v5.5.1",
+        "version_normalized": "5.5.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/LaravelCollective/html.git",
+            "reference": "2f6dc39ab3655724a615fe8a652d8b7f04fc9ac6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/LaravelCollective/html/zipball/2f6dc39ab3655724a615fe8a652d8b7f04fc9ac6",
+            "reference": "2f6dc39ab3655724a615fe8a652d8b7f04fc9ac6",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/http": "5.5.*",
+            "illuminate/routing": "5.5.*",
+            "illuminate/session": "5.5.*",
+            "illuminate/support": "5.5.*",
+            "illuminate/view": "5.5.*",
+            "php": ">=7.0.0"
+        },
+        "require-dev": {
+            "illuminate/database": "5.5.*",
+            "mockery/mockery": "~0.9.4",
+            "phpunit/phpunit": "~5.4"
+        },
+        "time": "2017-08-31T14:46:03+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Collective\\Html\\HtmlServiceProvider"
+                ],
+                "aliases": {
+                    "Form": "Collective\\Html\\FormFacade",
+                    "Html": "Collective\\Html\\HtmlFacade"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Collective\\Html\\": "src/"
+            },
+            "files": [
+                "src/helpers.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            },
+            {
+                "name": "Adam Engebretson",
+                "email": "adam@laravelcollective.com"
+            }
+        ],
+        "description": "HTML and Form Builders for the Laravel Framework",
+        "homepage": "http://laravelcollective.com"
     },
     {
         "name": "league/flysystem",
@@ -2281,17 +2348,17 @@
     },
     {
         "name": "ramsey/uuid",
-        "version": "3.7.1",
-        "version_normalized": "3.7.1.0",
+        "version": "3.7.2",
+        "version_normalized": "3.7.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/ramsey/uuid.git",
-            "reference": "45cffe822057a09e05f7bd09ec5fb88eeecd2334"
+            "reference": "bba83ad77bb9deb6d3c352a7361b818e415b221d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ramsey/uuid/zipball/45cffe822057a09e05f7bd09ec5fb88eeecd2334",
-            "reference": "45cffe822057a09e05f7bd09ec5fb88eeecd2334",
+            "url": "https://api.github.com/repos/ramsey/uuid/zipball/bba83ad77bb9deb6d3c352a7361b818e415b221d",
+            "reference": "bba83ad77bb9deb6d3c352a7361b818e415b221d",
             "shasum": ""
         },
         "require": {
@@ -2303,7 +2370,7 @@
         },
         "require-dev": {
             "apigen/apigen": "^4.1",
-            "codeception/aspect-mock": "^1.0 | ^2.0",
+            "codeception/aspect-mock": "^1.0 | ~2.0.0",
             "doctrine/annotations": "~1.2.0",
             "goaop/framework": "1.0.0-alpha.2 | ^1.0 | ^2.1",
             "ircmaxell/random-lib": "^1.1",
@@ -2311,7 +2378,7 @@
             "mockery/mockery": "^0.9.4",
             "moontoast/math": "^1.1",
             "php-mock/php-mock-phpunit": "^0.3|^1.1",
-            "phpunit/phpunit": "^4.7|>=5.0 <5.4",
+            "phpunit/phpunit": "^4.7|^5.0",
             "satooshi/php-coveralls": "^0.6.1",
             "squizlabs/php_codesniffer": "^2.3"
         },
@@ -2323,7 +2390,7 @@
             "ramsey/uuid-console": "A console application for generating UUIDs with ramsey/uuid",
             "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
         },
-        "time": "2017-09-22T20:46:04+00:00",
+        "time": "2018-01-13T22:22:03+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2412,17 +2479,17 @@
     },
     {
         "name": "sebastian/comparator",
-        "version": "2.1.1",
-        "version_normalized": "2.1.1.0",
+        "version": "2.1.2",
+        "version_normalized": "2.1.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/comparator.git",
-            "reference": "b11c729f95109b56a0fe9650c6a63a0fcd8c439f"
+            "reference": "11c07feade1d65453e06df3b3b90171d6d982087"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/b11c729f95109b56a0fe9650c6a63a0fcd8c439f",
-            "reference": "b11c729f95109b56a0fe9650c6a63a0fcd8c439f",
+            "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/11c07feade1d65453e06df3b3b90171d6d982087",
+            "reference": "11c07feade1d65453e06df3b3b90171d6d982087",
             "shasum": ""
         },
         "require": {
@@ -2433,7 +2500,7 @@
         "require-dev": {
             "phpunit/phpunit": "^6.4"
         },
-        "time": "2017-12-22T14:50:35+00:00",
+        "time": "2018-01-12T06:34:42+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3074,27 +3141,27 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v3.4.3",
-        "version_normalized": "3.4.3.0",
+        "version": "v4.0.3",
+        "version_normalized": "4.0.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
-            "reference": "e66394bc7610e69279bfdb3ab11b4fe65403f556"
+            "reference": "f97600434e3141ef3cbb9ea42cf500fba88022b7"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/css-selector/zipball/e66394bc7610e69279bfdb3ab11b4fe65403f556",
-            "reference": "e66394bc7610e69279bfdb3ab11b4fe65403f556",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/f97600434e3141ef3cbb9ea42cf500fba88022b7",
+            "reference": "f97600434e3141ef3cbb9ea42cf500fba88022b7",
             "shasum": ""
         },
         "require": {
-            "php": "^5.5.9|>=7.0.8"
+            "php": "^7.1.3"
         },
-        "time": "2018-01-03T07:37:34+00:00",
+        "time": "2018-01-03T07:38:00+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "3.4-dev"
+                "dev-master": "4.0-dev"
             }
         },
         "installation-source": "dist",
@@ -3702,24 +3769,24 @@
     },
     {
         "name": "symfony/thanks",
-        "version": "v1.0.1",
-        "version_normalized": "1.0.1.0",
+        "version": "v1.0.2",
+        "version_normalized": "1.0.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/thanks.git",
-            "reference": "b637913a92664571afd1067fc645ecb30c9cf5b2"
+            "reference": "0621e9e403cbae531165c98c99f05221bf3b9dba"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/thanks/zipball/b637913a92664571afd1067fc645ecb30c9cf5b2",
-            "reference": "b637913a92664571afd1067fc645ecb30c9cf5b2",
+            "url": "https://api.github.com/repos/symfony/thanks/zipball/0621e9e403cbae531165c98c99f05221bf3b9dba",
+            "reference": "0621e9e403cbae531165c98c99f05221bf3b9dba",
             "shasum": ""
         },
         "require": {
             "composer-plugin-api": "^1.1",
-            "php": "^5.5.9|^7.0.8"
+            "php": "^5.5.9|^7.0.0"
         },
-        "time": "2018-01-03T09:30:52+00:00",
+        "time": "2018-01-10T15:41:47+00:00",
         "type": "composer-plugin",
         "extra": {
             "branch-alias": {
@@ -3930,31 +3997,31 @@
     },
     {
         "name": "tijsverkoyen/css-to-inline-styles",
-        "version": "2.2.0",
-        "version_normalized": "2.2.0.0",
+        "version": "2.2.1",
+        "version_normalized": "2.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
-            "reference": "ab03919dfd85a74ae0372f8baf9f3c7d5c03b04b"
+            "reference": "0ed4a2ea4e0902dac0489e6436ebcd5bbcae9757"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/ab03919dfd85a74ae0372f8baf9f3c7d5c03b04b",
-            "reference": "ab03919dfd85a74ae0372f8baf9f3c7d5c03b04b",
+            "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/0ed4a2ea4e0902dac0489e6436ebcd5bbcae9757",
+            "reference": "0ed4a2ea4e0902dac0489e6436ebcd5bbcae9757",
             "shasum": ""
         },
         "require": {
-            "php": "^5.5 || ^7",
-            "symfony/css-selector": "^2.7|~3.0"
+            "php": "^5.5 || ^7.0",
+            "symfony/css-selector": "^2.7 || ^3.0 || ^4.0"
         },
         "require-dev": {
-            "phpunit/phpunit": "~4.8|5.1.*"
+            "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
         },
-        "time": "2016-09-20T12:50:39+00:00",
+        "time": "2017-11-27T11:13:29+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.0.x-dev"
+                "dev-master": "2.2.x-dev"
             }
         },
         "installation-source": "dist",
