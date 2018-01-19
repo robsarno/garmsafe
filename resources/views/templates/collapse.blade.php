@@ -5,7 +5,7 @@
   @endphp
   @foreach ($titoli as $titolo)
     <h2 class="featurette-heading">{{ $titolo->titolo }}</h2>
-    <h4 class="featurette-heading text-muted">{{ $titolo->sottotitolo }}</h4>
+    <h4 class="featurette-heading text-muted pb-3">{{ $titolo->sottotitolo }}</h4>
     @php
       $articoli=$titolo->articoli;
     @endphp

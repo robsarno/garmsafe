@@ -4,7 +4,9 @@
 @endsection
 @section('sez-contenuto')
 <div class="container">
-        @include('templates.sez-card')
+    <hr class="featurette-divider">
+    <h2 class="featurette-heading" style="text-align:center">Il nostro team</h2>
+    @include('templates.sez-card')
 </div>
 
 @endsection
