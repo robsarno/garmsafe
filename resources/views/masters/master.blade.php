@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<!-- Latest compiled and minified CSS -->
 		<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"-->
 		<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/mio.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/cover.css') }}">
+		<link rel="shortcut icon" href="{{{ asset('img/favicon.png') }}}">
 		<!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"-->
 		<meta charset="UTF-8">
 		<meta name="description" content="Your Security, Our Responsibility">
@@ -21,15 +21,9 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 		<title>@yield("titolo")</title>
 	</head>
-
 	<body>
 		@include('templates.nav-bar') @yield('body')
 		 @include('templates.footer')
 		 <script src="{{ asset('js/mio.js') }}"></script>
 	</body>
-
-
-
-
-
 </html>

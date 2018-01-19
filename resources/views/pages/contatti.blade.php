@@ -3,4 +3,5 @@
     @include('templates.copertine.copertina-generica')
 @endsection
 @section('sez-contenuto')
+    @include('templates.form')
 @endsection

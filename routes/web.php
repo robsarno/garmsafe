@@ -72,3 +72,4 @@ Route::get('/contatti', function () {
         "pagina"=>$pagina
     ]);
 });
+Route::post('invia-messaggio', ['as'=>'contatti.salva','uses'=>'ContattiController@contattiPost']);
