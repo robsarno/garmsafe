@@ -30,7 +30,7 @@
 					<a class="nav-link {{ Request::is('contatti')?'active':'' }}" href="/contatti">Contatti</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link btn btn-outline-warning ml-3" href="/acquista">Acquista ora</a>
+					<a class="nav-link btn btn-outline-warning ml-3 {{ Request::is('acquista')?'active':'' }}" href="/acquista">Acquista ora</a>
 				</li>
 			</ul>
 		</div>
