@@ -47,7 +47,7 @@ Route::get('/chi-siamo', function () {
     $pagina=Pagina::findOrFail(3);
     return view('pages.chi-siamo', [
         "pagina"=>$pagina,
-        "utenti"=>Utente::paginate(3)
+        "utenti"=>Utente::p(3)
     ]);
 });
 Route::get('/territorio', function () {
