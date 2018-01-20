@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Gen 18, 2018 alle 17:28
+-- Creato il: Gen 19, 2018 alle 11:53
 -- Versione del server: 10.1.29-MariaDB
 -- Versione PHP: 7.2.0
 
@@ -80,6 +80,22 @@ INSERT INTO `articoli_pagine` (`id_pagina`, `id_articolo`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Struttura della tabella `messaggi`
+--
+
+CREATE TABLE `messaggi` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `nome` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `messaggio` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `inviato` tinyint(1) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Struttura della tabella `migrations`
 --
 
@@ -94,16 +110,17 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(11, '2014_10_12_000000_create_users_table', 1),
-(12, '2014_10_12_100000_create_password_resets_table', 1),
-(13, '2018_01_16_150311_create_pagine_table', 1),
-(14, '2018_01_16_150518_create_articoli_table', 1),
-(15, '2018_01_16_150752_create_articoli_pagine_table', 1),
-(16, '2018_01_16_152046_create_tab3_table', 1),
-(17, '2018_01_16_152541_create_tab3_articoli_table', 1),
-(18, '2018_01_18_101803_create_noi_table', 1),
-(19, '2018_01_18_104652_create_titolo_table', 1),
-(20, '2018_01_18_111924_create_statuto_table', 1);
+(22, '2014_10_12_000000_create_users_table', 1),
+(23, '2014_10_12_100000_create_password_resets_table', 1),
+(24, '2018_01_16_150311_create_pagine_table', 1),
+(25, '2018_01_16_150518_create_articoli_table', 1),
+(26, '2018_01_16_150752_create_articoli_pagine_table', 1),
+(27, '2018_01_16_152046_create_tab3_table', 1),
+(28, '2018_01_16_152541_create_tab3_articoli_table', 1),
+(29, '2018_01_18_101803_create_noi_table', 1),
+(30, '2018_01_18_104652_create_titolo_table', 1),
+(31, '2018_01_18_111924_create_statuto_table', 1),
+(32, '2018_01_19_074636_create_messaggi_table', 1);
 
 -- --------------------------------------------------------
 
@@ -327,6 +344,12 @@ ALTER TABLE `articoli_pagine`
   ADD KEY `articoli_pagine_id_articolo_foreign` (`id_articolo`);
 
 --
+-- Indici per le tabelle `messaggi`
+--
+ALTER TABLE `messaggi`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indici per le tabelle `migrations`
 --
 ALTER TABLE `migrations`
@@ -395,10 +418,16 @@ ALTER TABLE `articoli`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
+-- AUTO_INCREMENT per la tabella `messaggi`
+--
+ALTER TABLE `messaggi`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT per la tabella `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT per la tabella `pagine`

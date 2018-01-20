@@ -13,8 +13,8 @@
       @foreach ($articoli as $articolo)
         <div class="card">
           <div class="card-header" role="tab" id="heading{{ $i }}">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" href="#collapse{{ $i }}" role="button" aria-expanded="false" aria-controls="collapse{{ $i }}">
+            <h5 class="mb-0 testo-sottile">
+              <a class="collapsed testo-scuro" data-toggle="collapse" href="#collapse{{ $i }}" role="button" aria-expanded="false" aria-controls="collapse{{ $i }}">
                 {{ $articolo->titolo }}
               </a>
             </h5>
